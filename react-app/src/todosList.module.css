@@ -1,0 +1,45 @@
+.todos-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.todo {
+  background: #fff;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+}
+
+.todo:nth-child(2n) {
+  background: #f7f7f7;
+}
+
+.todo>span {
+  background-color: #e74c3c;
+  height: 40px;
+  margin-right: 20px;
+  text-align: center;
+  color: white;
+  width: 0;
+  display: inline-block;
+  transition: 0.2s linear;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.todo:hover>span {
+  width: 40px;
+  opacity: 1;
+}
+
+.todo-completed {
+  text-decoration: line-through;
+  color: gray
+}
+
+.todo-fadeout {
+  opacity: 0;
+  height: 0;
+  transition: 0.2s linear;
+}
